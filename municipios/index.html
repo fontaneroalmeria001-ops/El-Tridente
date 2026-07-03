@@ -6,9 +6,9 @@
 <link rel="preload" as="image" href="/assets/logo-tridente.webp" fetchpriority="high">
 <title>Fontaneros Almería | El Tridente | Zonas cubiertas en la provincia</title>
 <meta name="description" content="Fontaneros en Almería con cobertura en los 103 municipios de la provincia: Poniente, Levante, Almanzora, Los Vélez, Filabres, Alpujarra y Andarax. Llama al 711206540.">
-<link rel="canonical" href="https://[DOMINIO]/municipios/">
-<link rel="alternate" hreflang="es" href="https://[DOMINIO]/municipios/">
-<link rel="alternate" hreflang="x-default" href="https://[DOMINIO]/municipios/">
+<link rel="canonical" href="https://fontanerosalmeria.com/municipios/">
+<link rel="alternate" hreflang="es" href="https://fontanerosalmeria.com/municipios/">
+<link rel="alternate" hreflang="x-default" href="https://fontanerosalmeria.com/municipios/">
 <link rel="preconnect" href="https://wa.me">
 <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Caveat:wght@500;700&display=swap" rel="stylesheet">
@@ -86,11 +86,11 @@
       <h3>Cuéntanos tu avería</h3>
       <p class="sub">Te llamamos en menos de 5 minutos para orientarte sin compromiso.</p>
       <form action="#" method="post">
-        <div class="field"><label>Nombre</label><input type="text" name="nombre" required></div>
+        <div class="field"><label for="f-nombre">Nombre</label><input type="text" id="f-nombre" name="nombre" required aria-label="Tu nombre"></div>
         <div class="field"><label>Teléfono</label><input type="tel" name="telefono" required></div>
-        <div class="field"><label>Zona</label><input type="text" name="zona" value="Almería y costa" readonly></div>
-        <div class="field"><label>¿Qué te pasa?</label>
-          <select name="problema">
+        <div class="field"><label for="f-zona">Zona</label><input type="text" id="f-zona" name="zona" value="Almería y costa" readonly aria-label="Zona de la averÃ­a"></div>
+        <div class="field"><label for="f-problema">¿Qué te pasa?</label>
+          <select id="f-problema" name="problema" aria-label="Tipo de avería">
             <option>Fuga de agua</option>
             <option>Atasco</option>
             <option>Sin agua caliente</option>
