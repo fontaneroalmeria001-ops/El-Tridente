@@ -63,17 +63,17 @@
 <p class="sub">Te llamamos en menos de 5 minutos para orientarte sin compromiso.</p>
 <form action="#" method="post">
 <div class="field"><label for="c-nombre">Nombre y apellidos</label><input type="text" id="c-nombre" name="nombre" required aria-label="Nombre y apellidos"></div>
-<div class="field"><label>Teléfono de contacto</label><input type="tel" name="telefono" required></div>
+<div class="field"><label for="c-telefono">Teléfono de contacto</label><input type="tel" id="c-telefono" name="telefono" required aria-label="Teléfono de contacto"></div>
 <div class="field"><label for="c-email">Email (opcional)</label><input type="email" id="c-email" name="email" aria-label="Correo electrÃ³nico opcional"></div>
-<div class="field"><label>Zona</label>
-<select name="zona">
+<div class="field"><label for="c-zona">Zona</label>
+<select id="c-zona" name="zona" aria-label="Zona donde estÃ¡ la averÃ­a">
 <option>Almería capital</option><option>Roquetas de Mar</option><option>Aguadulce</option><option>El Ejido</option><option>Huércal de Almería</option><option>Vícar</option><option>Mojácar</option><option>Otra</option>
 </select></div>
 <div class="field"><label for="f-problema">¿Qué te pasa?</label>
 <select id="f-problema" name="problema" aria-label="Tipo de avería">
 <option>Fuga de agua</option><option>Atasco</option><option>Sin agua caliente</option><option>Avería en termo</option><option>Cambio de tuberías</option><option>Reforma de baño</option><option>Otro</option>
 </select></div>
-<div class="field"><label>Describe brevemente la avería</label><textarea name="mensaje" placeholder="Cuándo empezó, qué ves, qué oyes..."></textarea></div>
+<div class="field"><label for="c-mensaje">Describe brevemente la avería</label><textarea id="c-mensaje" name="mensaje" aria-label="Describe la avería" placeholder="Cuándo empezó, qué ves, qué oyes..."></textarea></div>
 <div class="check"><input type="checkbox" id="rgpd" required><label for="rgpd">He leído y acepto la <a href="/legal/politica-privacidad/">política de privacidad</a>. Mis datos se usarán solo para responderme.</label></div>
 <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center">Que me llamen ahora</button>
 </form>
