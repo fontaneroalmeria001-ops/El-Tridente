@@ -17,10 +17,11 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   --navy-d:#062a4d;
   --navy-l:#1a5491;
   --orange:#f97316;
-  --orange-d:#ea580c;
+  --orange-d:#c2410c;
   --orange-l:#fed7aa;
-  --wa:#25d366;
-  --wa-d:#128c7e;
+  --orange-text:#9a3412;
+  --wa:#0e7a67;
+  --wa-d:#0a5f52;
   --red:#dc2626;
   --text:#1e293b;
   --muted:#64748b;
@@ -65,8 +66,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .nav .dropdown a:hover{background:var(--bg3);color:var(--navy)}
 
 .header-cta{display:flex;align-items:center;gap:10px}
-.btn-phone{background:var(--orange);color:#fff;font-weight:800;padding:11px 20px;border-radius:8px;transition:.2s;font-size:1rem;letter-spacing:.2px}
-.btn-phone:hover{background:var(--orange-d);transform:translateY(-1px);box-shadow:var(--sh-md)}
+.btn-phone{background:var(--orange-d);color:#fff;font-weight:800;padding:11px 20px;border-radius:8px;transition:.2s;font-size:1rem;letter-spacing:.2px}
+.btn-phone:hover{background:var(--orange-text);transform:translateY(-1px);box-shadow:var(--sh-md)}
 
 .menu-toggle{display:none;background:var(--navy);color:#fff;width:42px;height:42px;border-radius:8px;font-size:1.4rem;align-items:center;justify-content:center}
 
@@ -101,8 +102,8 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 }
 .hero-ctas{display:flex;gap:14px;flex-wrap:wrap;margin-bottom:32px}
 .btn{display:inline-flex;align-items:center;gap:10px;padding:15px 26px;border-radius:8px;font-weight:800;font-size:1.05rem;transition:.2s;letter-spacing:.2px}
-.btn-primary{background:var(--orange);color:#fff}
-.btn-primary:hover{background:var(--orange-d);transform:translateY(-2px);box-shadow:var(--sh-lg)}
+.btn-primary{background:var(--orange-d);color:#fff}
+.btn-primary:hover{background:var(--orange-text);transform:translateY(-2px);box-shadow:var(--sh-lg)}
 .btn-wa{background:var(--wa);color:#fff}
 .btn-wa:hover{background:var(--wa-d);transform:translateY(-2px);box-shadow:var(--sh-lg)}
 .btn-outline{background:transparent;border:2px solid #fff;color:#fff}
@@ -404,8 +405,32 @@ section.dark .section-head p{color:#cfe1f5}
 .cookie-banner p a{color:var(--navy);font-weight:600;text-decoration:underline}
 .cookie-banner .cookie-actions{display:flex;gap:10px;flex-wrap:wrap}
 .cookie-banner button{padding:11px 18px;border-radius:8px;font-weight:700;font-size:.92rem;cursor:pointer;border:1.5px solid var(--border);background:#fff;color:var(--text);font-family:inherit}
-.cookie-banner button.primary{background:var(--orange);color:#fff;border-color:var(--orange)}
-.cookie-banner button.primary:hover{background:var(--orange-d)}
+.cookie-banner button.primary{background:var(--orange-d);color:#fff;border-color:var(--orange-d)}
+.cookie-banner button.primary:hover{background:var(--orange-text);border-color:var(--orange-text)}
 .cookie-banner button:hover{border-color:var(--navy)}
 @keyframes cookie-in{from{opacity:0;transform:translateY(20px)}to{opacity:1;transform:translateY(0)}}
 .sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+
+/* ============= CONTRAST FIX (WCAG AA) ============= */
+/* Override para elementos de texto naranja sobre fondos claros que fallan contraste. */
+.section-head .eyebrow,
+.symptom a.more,
+.compare-stat-title .loss,
+.data-table .highlight,
+.stat-big .accent,
+.stat-big .unit,
+.stat a,
+.reason-num,
+.review::before,
+.review .stars,
+.faq summary::after,
+.logo span,
+[style*="color:var(--orange)"]{color:var(--orange-d) !important}
+
+/* Enlaces y hovers sobre fondo claro */
+.footer a:hover,
+.breadcrumbs a:hover{color:var(--orange-d)}
+.content a:hover{color:var(--orange-d);border-color:var(--orange-d)}
+.stat a{border-bottom-color:var(--orange-d)}
+
+/* Enlaces naranjas dentro de la sección hero conservan brillo (fondo oscuro) */
