@@ -183,10 +183,10 @@
       <h3>Cuéntanos tu avería</h3>
       <p class="sub">Te llamamos en menos de 5 minutos para orientarte sin compromiso.</p>
       <form action="#" method="post">
-        <div class="field"><label>Nombre</label><input type="text" name="nombre" required></div>
+        <div class="field"><label for="f-nombre">Nombre</label><input type="text" id="f-nombre" name="nombre" required aria-label="Tu nombre"></div>
         <div class="field"><label>Teléfono</label><input type="tel" name="telefono" required></div>
-        <div class="field"><label>¿Qué te pasa?</label>
-          <select name="problema">
+        <div class="field"><label for="f-problema">¿Qué te pasa?</label>
+          <select id="f-problema" name="problema" aria-label="Tipo de avería">
             <option>Fuga de agua</option>
             <option>Atasco</option>
             <option>Sin agua caliente</option>
