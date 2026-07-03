@@ -48,8 +48,10 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
 .header{background:#fff;border-bottom:1px solid var(--border);position:sticky;top:0;z-index:100;box-shadow:var(--sh)}
 .header .container{display:flex;align-items:center;justify-content:space-between;gap:20px;padding-top:8px;padding-bottom:8px}
 .logo{display:flex;align-items:center;gap:10px;font-weight:900;font-size:1.35rem;color:var(--navy)}
-.header-logo{height:90px;width:auto;display:block}
-@media (max-width:640px){.header-logo{height:64px}}
+.header-logo{height:90px;width:auto;max-width:none;object-fit:contain;display:block}
+@media (max-width:900px){.header-logo{height:56px}}
+@media (max-width:560px){.header-logo{height:44px}}
+@media (max-width:380px){.header-logo{height:38px}}
 .logo span{color:var(--orange)}
 .logo-mark{width:42px;height:42px;background:var(--navy);border-radius:10px;display:grid;place-items:center;color:var(--orange);font-weight:900;font-size:1.3rem}
 
@@ -74,7 +76,9 @@ button{font-family:inherit;cursor:pointer;border:none;background:none}
   .nav>li>a{padding:12px 14px}
   .nav .dropdown{position:static;opacity:1;visibility:visible;transform:none;box-shadow:none;border:0;padding:0 0 0 16px;min-width:0}
   .menu-toggle{display:flex}
-  .btn-phone{padding:9px 14px;font-size:.9rem}
+  .btn-phone{padding:8px 12px;font-size:.85rem}
+  .header .container{gap:10px}
+  @media (max-width:380px){.btn-phone{padding:7px 10px;font-size:.78rem}}
 }
 
 /* ============= HERO ============= */
