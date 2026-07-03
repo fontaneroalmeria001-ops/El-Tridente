@@ -36,7 +36,7 @@ Aviso al agua de la zona: gran parte de Almería tiene agua dura con alto conten
 - [Laujar de Andarax](/laujar-de-andarax/), [Canjáyar](/canjayar/), [Fondón](/fondon/), [Ohanes](/ohanes/), [Bayárcal](/bayarcal/)
 - [Tabernas](/tabernas/), [Sorbas](/sorbas/), [Lucainena de las Torres](/lucainena-de-las-torres/)
 - [Alhama de Almería](/alhama-de-almeria/), [Gádor](/gador/), [Rioja](/rioja/), [Santa Fe de Mondújar](/santa-fe-de-mondujar/)
-- [Ver todas las zonas](/zonas/) (103 municipios)
+- [Ver todas las zonas](/municipios/) (103 municipios)
 
 ## Contenidos útiles
 
